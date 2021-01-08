@@ -1,0 +1,113 @@
+@media all {
+
+h1 {
+    font-size: 3vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h2 {
+    font-size: 2vw;
+    color: salmon;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+}
+ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+}
+body {
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.4em;
+
+}
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+.color_bar {
+    position: absolute;
+    width: 100%;
+    height: 8vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 193, 198, 0.87);
+    z-index: 1;
+}
+
+.title{
+    color:saddlebrown;
+    position: relative;
+    margin: 2% auto;
+    width: 40%;
+    text-align: center;
+    border-color: black;
+    border-width: .4em;
+    border-style: solid;
+    border-radius: .6vw;
+    box-shadow: 1px 2px 2px #676767;
+    z-index: 2;
+}
+.do_it_box {
+    max-width: content-box;
+    position: fixed;
+    border-radius: 15px;
+    right: 5%;
+    bottom: 5%;
+    text-align: center;
+    background-color: rgba(103, 103, 103, 0.56);
+    z-index: 3;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    text-align: left;
+    margin-left: 15vw;
+}
+.column_left {
+    margin: 2vw 2vw 5vw 15vw;
+    text-align: left;
+}
+#resume_img {
+    border-radius: 20%;
+    max-height: 23vw;
+}
+
+}
+@media print {
+
+
+    h1 {
+        font-family: 'Alef', sans-serif;
+    }
+
+    h2 {
+        font-family: 'Alef', sans-serif;
+    }
+    p {
+        font-family: 'Alef', sans-serif;
+
+    }
+    ul {
+        font-family: 'Alef', sans-serif;
+
+    }
+
+    .do_it_box {
+       display: none;
+    }
+
+    #resume_img_box {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="lab1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alef&display=swap" rel="stylesheet">
+    <title>About Me</title>
+
+</head>
+<body>
+<header class="header">
+    <div class="img_box">
+        <img src="./pics/cat2.jpg" alt="best teacher ever" id="icon">
+    </div>
+    <ul class="menu">
+        <li class="dropdown">
+            <a href="#contact">Contact</a>
+            <div class="dropdown-content">
+                <a href="#contact" id="right_content">Connect</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a>Cats</a>
+            <div class="dropdown-content">
+                <a href="#about_me">Disliked Cat</a>
+                <a href="#top">Smiling Cat</a>
+            </div>
+        </li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</header>
+<!-- body -->
+<a class="hidden" id="top"></a>
+<div class="wrapper">
+    <section class="top">
+
+    <!-- This part of the web page should welcome users to your site.
+    It will list the internal hyperlinks to each of the other sections in the page.
+    Add a picture or a logo in this part of the page. -->
+        <div class="img_container">
+            <img src="./pics/handcat.jpg" alt="cat_licking" class="img_slide">
+            <h1 class="welcome" id="first">This is my Page<br>Check it...</h1>
+            <h2 class="welcome" id="second">As you can tell,<br>I believe there will never be enough<br>cats on the internet</h2>
+        </div>
+
+</section>
+    <section class="about_me">
+    <!--Three or four interesting facts about yourself.  (Where you were born. Favourite Food etc)
+    Two or three pictures that are located in your ‘photos’ directory.-->
+    <a class="hidden" id="about_me"></a>
+    <h1 class="section_header">Some Interesting Facts About Me</h1>
+    <div class="flex-grid">
+        <div class="col"><p class="grid_text" id="text_1">I think wheat is the best color</p><img src="pics/wheat.jpg" class="grid_img" alt="t"></div>
+        <div class="col"><p class="grid_text" id="text_2">I love coffee,<br>who doesn't?</p><img src="pics/Goran.PNG" class="grid_img" alt="t"></div>
+    </div>
+    <div class="flex-grid">
+        <div class="col"><p class="grid_text" id="text_3">I actually don't like cat's that much</p><img src="pics/cat3.jfif" class="grid_img" alt="t"></div>
+        <div class="col"><p class="grid_text" id="text_4">I used to do rodeo</p><img src= "pics/bull.jpg" class="grid_img" alt="t"></div>
+    </div>
+</section>
+    <section class="courses">
+    <!--Display a table of courses you are taking.
+    Include a short description of each course.
+    Use the CSS file to experiment with different fonts for the table data.
+    Use ‘padding’ and ‘borders’ to change the appearance of the table.-->
+    <a class="hidden" id="courses"></a>
+    <h1 class="section_header">How fun my classes are:</h1>
+    <table class="table">
+        <tr class="row">
+            <th class="table_header">Course</th>
+            <th class="table_header">Terrible</th>
+            <th class="table_header">Not at all</th>
+            <th class="table_header">Meh</th>
+            <th class="table_header">Pretty good</th>
+            <th class="table_header">Fantastic!</th>
+        </tr>
+        <tr class="row">
+            <th class="table_header">Web Dev</th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>X</td>
+        </tr>
+        <tr class="row">
+            <th class="table_header">OOP</th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>X</td>
+        </tr>
+        <tr class="row">
+            <th class="table_header">Data Base</th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>X</td>
+            <td> </td>
+        </tr>
+        <tr class="row">
+            <th class="table_header">U.I.</th>
+            <td> </td>
+            <td> </td>
+            <td>X</td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr class="row">
+            <th class="table_header">Bus. Dynamics</th>
+            <td>X</td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+</section>
+    <section class="work_experience">
+    <!--Include a ‘mini resume’ listing your recent work experience.-->
+    <a class="hidden" id="work"></a>
+    <h1 class="section_header">I used to drive machinery just like this:</h1>
+    <div class="flex-grid">
+        <div class="col"><iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/BcYuAR8bimo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col"><iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/S_6HgLybYP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="flex-grid">
+
+    </div>
+</section>
+    <section class="contact_me">
+    <!--Create a simple form that includes the following information:
+
+    A message subject
+    Message type: Personal or Work
+    Message text field
+
+    Include a ‘submit’ and ‘reset’ button. The ‘submit’ button will send the data to: personal@sait.ca.
+    The form will be in the centre of the page.
+    Use the appropriate ‘tags’ in the CSS file to control the appearance of the form. -->
+    <a class="hidden" id="contact"></a>
+    <h1 class="section_header">Send me spam!</h1>
+    <form class="contact" action="mailto:jones.matthew@edu.sait.ca" method="post">
+        <div class="form_layout">
+            <div id="name_box">
+                <h3>First Name:</h3>
+            <label>
+                <input type="text" name="firstname" required minlength="1" maxlength="20" size="20">
+            </label>
+            </div>
+            <div id="email_box">
+                <h3>Email Address</h3>
+                <label>
+                    <input type="text" name="email" placeholder="@edu.sait.ca" required minlength="1" maxlength="30" size="30">
+                </label>
+            </div>
+            <div id="Phone_box">
+                <h3>Subject</h3>
+                <label>
+                    <input type="radio" name="radAnswer">Personal
+                </label>
+                <label>
+                    <input type="radio" name="radAnswer">Business
+                </label><br>
+                <label>
+                    <input type="text" name="Phone Number" required minlength="1" maxlength="30" size="30">
+                </label>
+            </div>
+
+            <div id="input_box">
+                <h3>Tell me what's on your mind</h3>
+
+                <label>
+                <textarea class="box" style="resize: none" placeholder="write here..."></textarea>
+                </label><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </div>
+    </form>
+    <img class="postcard" src="pics/travel-postcard-vector-air-mail-style-paper-texture-rubber-stamps-50114060.jpg" alt="postcard">
+</section>
+<!--At the bottom of the page, include an internal hyperlink to the top of the page. -->
+</div>
+<div class="up_pls">
+   <a href="#top" class="top_pls"><img src="pics/icons8-up-100.png" alt="up" class="icon"></a>
+</div>
+<footer class="footer">
+    <p>Made By Matt Jones</p>
+</footer>
+</body>
+</html>

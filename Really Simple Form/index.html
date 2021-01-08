@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title>Really simple form</title>
+</head>
+<body>
+<div class="img">
+
+</div>
+<div>
+<form action="mailto:registration@newhotels.net" method="post" >
+    <label>
+        Name:<br>
+        <input type="text" name="name" autocomplete="on" placeholder="Joe Shmoe" maxlength="30" pattern= "*[a-zA-Z -]"><br>
+    </label>
+    <label>
+        Address:<br>
+        <input type="text" name="Address" autocomplete="on" required minlength="1" maxlength="30" placeholder="Calgary Tower"><br>
+    </label>
+    <label>
+        Phone Number:<br>
+        <input type="tel" name="phone" autocomplete="on" placeholder="1-403-123-1234" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    </label>
+    <label>
+        Age:<br>
+        <input type="number" name="age" autocomplete="on" placeholder="18+" required min="18" max="100"><br>
+    </label>
+    <label>
+        E-Mail:<br>
+        <input type="email" name="email" placeholder="spamMe@gmail.com" autocomplete="on" required minlength="1" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
+    </label>
+    <label>
+        Registration Date:<br>
+        <input type="date" name="registration date" required><br>
+    </label>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <button  onclick="window.location.href = 'https://www.instagram.com/wilfredwarrior/?hl=en';">click me</button>
+</form>
+</div>
+</body>
+</html>

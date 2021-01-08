@@ -1,0 +1,22 @@
+body {
+     margin: 0;
+    padding: 0;
+
+}
+div {
+    opacity: 0.99;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("images/cats.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+form {
+    margin: 5vw 5vw;
+    font-size: 1vw;
+}
+input {
+    margin: 2px;
+}
