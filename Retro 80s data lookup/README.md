@@ -2,6 +2,9 @@
 
 Front end challenge
 
+# Instructions
+please clone or download and open index.html
+
 ## Requirements:
 
 You are to create a web page that will search for an employee. You are to use the ‘dataset.xml’ file that contains ‘employee’ data. Your application will do the following:
