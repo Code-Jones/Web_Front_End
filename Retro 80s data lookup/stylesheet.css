@@ -28,8 +28,8 @@ h1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
     /*justify-content: space-evenly;*/
 }
 .inputs div {
