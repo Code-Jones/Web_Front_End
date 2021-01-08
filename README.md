@@ -5,14 +5,10 @@ These are projects from my first web class in school. You can open any project b
 ## Favorites
 
 - AboutMe
-<img
-src=“images/aboutme.png”
-raw=true
-alt=“aboutme”
-style=“margin-right: 10px;”
-/>
+![Aboutme](https://github.com/Code-Jones/Web_Front_End/blob/Master/images/aboutme.png)
 - ResumeTemplate
-
+![ResumeTemplate](https://github.com/Code-Jones/Web_Front_End/blob/Master/images/resume.png)
 - Retro 80s data look up
-
+![Retro data](https://github.com/Code-Jones/Web_Front_End/blob/Master/images/retro.png)
 - Not Dodgey at all Brakes Car Rental
+![Dodgey Brakes](https://github.com/Code-Jones/Web_Front_End/blob/Master/images/brakes.png)
