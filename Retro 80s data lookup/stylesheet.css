@@ -1,0 +1,95 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gotu', sans-serif;
+    background-image: url("image/neon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: #f7f2f6;
+    text-shadow: 2px 2px 2px #000000;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 5% auto;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 4px solid #00d55f;
+    font-style: oblique;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1em;
+    /*justify-content: space-evenly;*/
+}
+.inputs div {
+    min-width: 50%;
+}
+input {
+    border: none;
+    width: 25%;
+    padding: 1rem;
+    height: .5em;
+    color: #02fffc;
+    border-bottom: 4px solid #00d55f;
+    -webkit-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+    background-color: rgba(255,93,215,0);
+}
+label {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px #fafbff;
+}
+
+input:focus {
+    width: 40%;
+    -webkit-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+}
+.cursor {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    pointer-events: none;
+    z-index: -1;
+    backdrop-filter:blur(1px) contrast(50);
+}
+
+.input-grow {
+    transform: translate(-50%, -50%) scale(3);
+    background: black;
+}
+
+.hovered-inputs {
+    color: white;
+    background-color: rgba(255,93,215,0);
+    border-bottom-color: #00f5f3;
+}
+#table {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+th {
+    color: #00d55f;
+    font-size: 1.3rem;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}

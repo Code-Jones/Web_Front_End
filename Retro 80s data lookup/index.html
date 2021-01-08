@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Part 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<!-- I can do things other then cat sites -->
+<body class="scrollbar-hidden" onmouseenter="music.play()">
+<div class="cursor"></div>
+<h1 class="input">Search Your Heart Away. . .</h1>
+<div class="inputs">
+    <div>
+        <label class="input" for="first_name">Search by First Name: </label>
+        <input class="input" id="first_name" onfocusout="clearTable(this.id)" type="text" autocomplete="off">
+    </div>
+    <div>
+        <label class="input" for="last_name">Search by Last Name: </label>
+        <input class="input" id="last_name" onfocusout="this.value=''" type="text" autocomplete="off">
+    </div>
+
+
+    <div>
+        <label class="input" for="id">Search by ID: </label>
+        <input class="input" id="id" onfocusout="this.value=''" type="text" autocomplete="off">
+    </div>
+    <div>
+        <label class="input" for="job_title">Search by Job Title: </label>
+        <input class="input" id="job_title" onfocusout="this.value=''" type="text" autocomplete="off">
+    </div>
+</div>
+
+<table id="table">
+</table>
+
+</body>
+<script src="script.js"></script>
+</html>
