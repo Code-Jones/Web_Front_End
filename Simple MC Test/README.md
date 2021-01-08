@@ -1,8 +1,8 @@
-#Simple MC Test
+# Simple MC Test
 
 Front end challenge
 
-##Requirements: 
+## Requirements: 
 
 You are to create a web page that will display a quiz and create the necessary JavaScript to complete the following:
 
