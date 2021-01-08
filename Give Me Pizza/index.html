@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--landing img-->
+<section class="landing">
+    <div class="title_landing">
+        <h1 class="title">City Delicatessen</h1>
+        <h2 class="title_sub" id="change_element">We put the purr in Purrfect</h2>
+        <h2 class="title_sub" id="change_element_date"></h2>
+    </div>
+    <img alt="landing pizza" src="images/bakedpizza.jpg">
+</section>
+<!--turn table-->
+<section class="turn_table">
+    <div class="table_title">
+        <h1>We design with cats in mind</h1>
+        <h2>Pizza in a cat friendly environment</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!</p>
+    </div>
+    <div class="text_area">
+        <h2>Come to the cat events</h2>
+        <p>
+            <img alt="turn table cat" src="images/catpizza.gif">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+
+        </p>
+    </div>
+</section>
+<section class="events_section">
+    <div class="events">
+        <img alt="catandpizza" class="catbackground" src="images/wallpaperpizzacat.jpg">
+        <div class="event_title">
+            <h1>Up coming events</h1>
+            <h2>these are events</h2>
+        </div>
+    </div>
+    <div class="text_img">
+        <img alt="cat god" src="images/catpizzagod.jpeg">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus
+            in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat
+            voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus
+            in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat
+            voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus
+            in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat
+            voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus
+            in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat
+            voluptates
+            quibusdam dicta!
+        </p>
+    </div>
+</section>
+
+<section class="menu">
+    <div class="subsection" id="sub_one">
+        <div class="table_title">
+            <h1>Pick Your Meal</h1>
+        </div>
+        <div id="option_buttons">
+            <button class="button" id="pizza" onclick="showOptions(this.id)">Pizza</button>
+            <button class="button" id="sandwich" onclick="showOptions(this.id)">Sandwich</button>
+            <button class="button" id="drink" onclick="showOptions(this.id)">Drinks</button>
+        </div>
+
+        <div id="pizza_option_group" style="display: none">
+            <table class="pizza_table_1">
+                <tr>
+                    <td><input class="pizza_option" id="p_option_1" name="pizza_option"
+                               type="radio"></td>
+                    <td><label for="p_option_1">Super Cheesy</label></td>
+                </tr>
+                <tr>
+                    <td><input class="pizza_option" id="p_option_2" name="pizza_option"
+                               type="radio"></td>
+                    <td><label for="p_option_2">Extra Meat</label></td>
+                </tr>
+                <tr>
+                    <td><input class="pizza_option" id="p_option_3" name="pizza_option"
+                               type="radio"></td>
+                    <td><label for="p_option_3">Really Veggie</label></td>
+                </tr>
+            </table>
+            <table class="pizza_table_2">
+                <tr>
+                    <td>
+                        <input class="topping_choice" id="top_ExCheese" type="checkbox"></td>
+                    <td><label for="top_ExCheese">Extra Cheese</label></td>
+                </tr>
+                <tr>
+                    <td><input class="topping_choice" id="top_Pepperoni" type="checkbox"></td>
+                    <td><label for="top_Pepperoni">Pepperoni</label></td>
+                </tr>
+                <tr>
+                    <td><input class="topping_choice" id="top_Mushroom" type="checkbox"></td>
+                    <td><label for="top_Mushroom">Mushrooms</label></td>
+                </tr>
+                <tr>
+                    <td><input class="topping_choice" id="top_Bacon" type="checkbox"></td>
+                    <td><label for="top_Bacon">Bacon</label></td>
+                </tr>
+                <tr>
+                    <td><input class="topping_choice" id="top_Olives" type="checkbox"></td>
+                    <td><label for="top_Olives">Olives</label></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="sand_option_group" style="display: none">
+            <table>
+                <tr>
+                    <td><input class="sandwich_option" id="s_option_1" name="sand_option"
+                               type="radio"></td>
+                    <td>
+                        <label for="s_option_1">All Garden Vegetarian</label>
+                    </td>
+                    <td><input class="sandwich_option" id="s_option_2" name="sand_option"
+                               type="radio"></td>
+                    <td>
+                        <label for="s_option_2">Big Beef on a Bun</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="sandwich_option" id="s_option_3" name="sand_option"
+                               type="radio"></td>
+                    <td>
+                        <label for="s_option_3">Mixed Grill</label>
+                    </td>
+                    <td><input class="sandwich_option" id="s_option_4" name="sand_option"
+                               type="radio"></td>
+                    <td>
+                        <label for="s_option_4">Grilled Pork</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="drink_option_group" style="display: none">
+            <table>
+                <tr>
+                    <td>
+                        <input class="drink_option" id="d_option_1" name="drink_options" type="radio">
+                    </td>
+                    <td>
+                        <label for="d_option_1">Cola</label>
+                    </td>
+                    <td>
+                        <input class="drink_option" id="d_option_2" name="drink_options" type="radio">
+                    </td>
+                    <td>
+                        <label for="d_option_2"><Ora></Ora>nge</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="drink_option" id="d_option_3" name="drink_options" type="radio">
+                    </td>
+                    <td>
+                        <label for="d_option_3">Lemon</label>
+                    </td>
+                    <td>
+                        <input class="drink_option" id="d_option_4" name="drink_options" type="radio">
+                    </td>
+                    <td>
+                        <label for="d_option_4">Root Beer</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sizes" id="size_option_group" style="display:none;">
+            <table>
+                <tr>
+                    <td><input class="size_option" id="size_s" name="size" type="radio"></td>
+                    <td><label for="size_s">Small</label></td>
+                    <td><input class="size_option" id="size_m" name="size" type="radio"></td>
+                    <td><label for="size_m">Med</label></td>
+                    <td><input class="size_option" id="size_l" name="size" type="radio"></td>
+                    <td><label for="size_l">Large</label></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="quantity">Quantity</label>
+                    </td>
+                    <td>
+                        <input class="quantity" id="quantity" min="0" type="number">
+                    </td>
+                    <td>
+                        <button onclick="addToOrder()" class="button">Add to Order</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--   ___________________________-->
+        <div>
+            <form class="form" onsubmit="setCustomerDetails();return false">
+                <table>
+                    <tr>
+                        <td><label for="firstName">First Name:</label></td>
+                        <td><input autocomplete="on" id="firstName" maxlength="30" name="name"
+                                   placeholder="Joe" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last Name:</label></td>
+                        <td><input autocomplete="on" id="lastName" maxlength="30" name="name"
+                                   placeholder="Shmoe" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address"> Address:</label></td>
+                        <td><input autocomplete="on" id="address" maxlength="30" minlength="1" name="Address"
+                                   placeholder="Calgary Tower"
+                                   required type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input autocomplete="on" id="phone" name="phone"
+                                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                   placeholder="1-403-123-1234" type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"> E-Mail:</label></td>
+                        <td><input autocomplete="on" id="email" minlength="1" name="email"
+                                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="spamMe@gmail.com"
+                                   required type="email"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="button">Update Information</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </div>
+    <div class="subsection" id="sub_two">
+        <h1>Your Order</h1>
+        <p>Your Information:<br></p>
+        <table id="information_table">
+            <tr id="information_name">
+                <td></td>
+            </tr>
+            <tr id="information_address">
+                <td></td>
+            </tr>
+            <tr id="information_phone">
+                <td></td>
+            </tr>
+        </table>
+        <p>
+            Your Order:
+        </p>
+        <p id="pizza_title" style="display: none">
+            Pizzas:
+        </p>
+        <table id="order_pizza_table">
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <p id="sandwich_title" style="display: none">
+            Sandwiches:
+        </p>
+        <table id="order_sandwich_table">
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <p id="drink_title" style="display: none">
+            Drinks:
+        </p>
+        <table id="order_drink_table">
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <p>Order Total: <span id="total">$0</span></p>
+        <button type="button" onclick="sendData()" class="button" id="send_button">Looks Good!</button>
+    </div>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
