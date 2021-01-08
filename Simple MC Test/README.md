@@ -2,6 +2,9 @@
 
 Front end challenge
 
+# Instructions
+please clone or download and open index.html
+
 ## Requirements: 
 
 You are to create a web page that will display a quiz and create the necessary JavaScript to complete the following:
