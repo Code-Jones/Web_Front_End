@@ -2,6 +2,9 @@
 
 Front end challenge
 
+# Instructions
+please clone or download and open index.html
+
 ## Requirements:
 
 Your task is to create the Web Application for ‘Dodgy Brakes Car Rental’.  The index.html page will have a ‘header’ and ‘footer’ that will display a company logo and the current date and time. Include a suitable background photo for the page and a link to ‘rental.html’.
