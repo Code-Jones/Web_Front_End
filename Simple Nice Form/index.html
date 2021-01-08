@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part B</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="logo">
+    <img src="../photo_archives/banklogo.png" alt="logo" id="icon">
+<h1>Western Cascade Finance</h1>
+</div>
+<form action="mailto:applications@wcf.ab.ca" method="post" >
+    <div class="row">
+    <label>
+        First Name:<br>
+        <input type="text" name="name" autocomplete="on" placeholder="Joe" maxlength="30" pattern= "*[a-zA-Z -]"><br>
+    </label>
+    <label>
+        Last Name:<br>
+        <input type="text" name="name" autocomplete="on" placeholder="Shmoe" maxlength="30" pattern= "*[a-zA-Z -]"><br>
+    </label>
+    </div>
+    <div class="row">
+    <label>
+        Address:<br>
+        <input type="text" name="Address" autocomplete="on" required minlength="1" maxlength="30" placeholder="Calgary Tower"><br>
+    </label>
+    <label>
+        Postal Code:<br>
+        <input type="text" name="Postal" autocomplete="on" required minlength="1" maxlength="7" placeholder="T2T 4T5" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"><br>
+    </label>
+    </div>
+    <div class="row">
+    <label>
+        Phone Number:<br>
+        <input type="tel" name="phone" autocomplete="on" placeholder="1-403-123-1234" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    </label>
+        <label class="item">Business
+            <input name="phone" type="radio"><br></label>
+        <label class="item">Personal
+            <input name="phone" type="radio"><br></label>
+    </div>
+    <div class="row">
+    <label>
+        E-Mail:<br>
+        <input type="email" name="email" placeholder="spamMe@gmail.com" autocomplete="on" required minlength="1" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br>
+    </label>
+    <label class="item"> Date of application <br>
+        <input class="item" type="date"><br>
+    </label>
+        <label>
+            Age:<br>
+            <input type="number" name="age" autocomplete="on" placeholder="18+" required min="18" max="100"><br>
+        </label>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+    <label class="item">Are you a Current Client?
+        <input name="current" type="radio">Yes
+        <input name="current" type="radio">No</label>
+    <br>
+    </div>
+    <div class="row">
+    <label class="item">What gender are you?
+        <input name="gender" type="radio">Male
+        <input name="gender" type="radio">Female
+        <input name="gender" type="radio">Other</label>
+    <br>
+    </div>
+    <div class="row">
+    <label class="item">Do you own or rent your home:
+        <input name="home" type="radio">Own
+        <input name="home" type="radio">Rent</label>
+    <br>
+    </div>
+    <div class="row">
+    <br>
+    <label class="item">Do you have any of the following?<br>
+        <input name="vehicle" type="checkbox"> Vehicle
+        <input name="RRSP" type="checkbox"> RRSP
+        <input name="TFSA" type="checkbox"> TFSA
+        <input name="RRIF" type="checkbox"> RRIF</label>
+    </div>
+    <div class="row">
+    <label class="item">Annual Gross Income:
+        <input name="0" type="number" placeholder="1 million dollars"></label>
+    </div>
+    <div class="button">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </div>
+</form>
+</body>
+</html>
