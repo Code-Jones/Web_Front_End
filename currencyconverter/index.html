@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm Part 1</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div class="form_group">
+    <div class="form__label">
+        <label class="form__label" for="currency_option_1">What would you like to convert?<br></label>
+        <select class="form__input" id="currency_option_1" name="user_choice_1" onchange="changeText()">
+            <option class="form__input" id="Canadian_Dollar_option_1" selected value="Canadian Dollar">Canadian Dollar</option>
+            <option class="form__input" id="Euro_option_1" value="Euro">Euro</option>
+            <option class="form__input" id="US_Dollar_option_1" value="US Dollar">US Dollar</option>
+            <option class="form__input" id="UK_Pound_Sterling_option_1" value="UK Pound Sterling">UK Pound Sterling</option>
+            <option class="form__input" id="Japanese_Yen_option_1" value="Japanese Yen">Japanese Yen</option>
+        </select>
+    </div>
+</div>
+<div class="form_group">
+    <div class="form__label">
+        <label class="form__label" for="currency_option_2">What would you like to convert too?<br></label>
+        <select class="form__input" id="currency_option_2" name="user_choice_2" onchange="changeText()">
+            <option class="form__input" id="Canadian_Dollar_option_2" value="Canadian Dollar">Canadian Dollar</option>
+            <option class="form__input" id="Euro_option_2" selected value="Euro">Euro</option>
+            <option class="form__input" id="US_Dollar_option_2" value="US Dollar">US Dollar</option>
+            <option class="form__input" id="UK_Pound_Sterling_option_2" value="UK Pound Sterling">UK Pound Sterling</option>
+            <option class="form__input" id="Japanese_Yen_option_2" value="Japanese Yen">Japanese Yen</option>
+        </select>
+    </div>
+</div>
+
+<p id="rate"></p>
+
+<div class="form_group">
+    <input class="form__input" id="text_box_1"
+           name="text_box_1"  onchange="box1_to_box2()" onclick="changeText()" placeholder="Currency 1"
+           required="" type="text"/>
+    <label class="form__label" for="text_box_1" id="label_1">Currency 1</label>
+</div>
+
+<div class="form_group">
+    <input class="form__input" id="text_box_2"
+           name="text_box_2" onchange="box2_to_box1()" onclick="changeText()" placeholder="Currency 2"
+           required="" type="text"/>
+    <label class="form__label" for="text_box_2" id="label_2">Currency 2</label>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
