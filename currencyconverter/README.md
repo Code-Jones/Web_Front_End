@@ -1,4 +1,4 @@
-# Not Dodgy at all Brakes Car Rental
+# Currency Converter
 
 Front end challenge
 
