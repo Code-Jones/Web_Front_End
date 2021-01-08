@@ -1,0 +1,327 @@
+/*globals -------------------------------------*/
+html {
+    font-family: 'Lora', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 5vw;
+    text-align: center;
+    color: #2dbf39;
+    text-shadow: 2px 2px 2px wheat;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+/*landing area -----------------------------*/
+.landing img {
+    max-width: 100%;
+    min-width: 40vw;
+}
+
+.title_landing {
+    position: absolute;
+    margin: 5vw 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 5vw;
+    margin: -5vw 0 0 0;
+}
+
+.slogan {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+/*final form --------------------*/
+
+.final_form {
+    display: none;
+    background-color: rgba(246, 246, 246, 0.67);
+    margin-left: 23vw;
+    margin-top: 2vw;
+    flex-direction: column;
+    width: 50%;
+
+}
+.final_form h3 {
+    /*display: flex;*/
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*garden_talk ------------------------------------- */
+.garden_talk {
+    margin: 10vw 0 0 0;
+    width: 100%;
+    min-height: 75vw;
+}
+
+.garden_title p {
+    width: 40%;
+    text-align: center;
+    margin: 0 0 0 30vw;
+}
+
+.garden_text_area {
+    margin: 5vw 0 0 5vw;
+    width: 90%;
+    text-align: left;
+}
+
+.garden_text_area img {
+    margin-left: 5rem;
+    max-width: 40vw;
+    border-radius: 50%;
+    float: right;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+}
+
+@media only screen and (min-width: 700px) {
+    .garden_text_area img {
+        margin-left: 8rem;
+    }
+}
+
+/*calculator -------------------------------------*/
+.calc_box {
+    margin-left: 23vw;
+    margin-top: 2vw;
+    min-height: 20vw;
+    min-width: 50vw;
+    background-color: rgba(246, 246, 246, 0.67);
+    z-index: 1;
+    display: none;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    font-size: 1.3vw;
+    text-shadow: 2px 2px 2px aliceblue;
+}
+
+.choices a {
+    margin: 3vw;
+
+}
+
+/* shapes */
+.meas {
+    display: none;
+    flex-direction: row;
+}
+
+.meas_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.results_buttons {
+    margin: 5px;
+}
+.results_buttons button {
+    padding: 15px;
+    border-radius: 33%;
+    border-style: none;
+    background-color: darkseagreen;
+    margin: 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+/*contact form -------------------------------------*/
+.action_page {
+    margin-left: 23vw;
+    margin-top: 2vw;
+    min-height: 20vw;
+    min-width: 50vw;
+    background-color: rgba(246, 246, 246, 0.67);
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.action_page h2 {
+    margin: 5px;
+}
+
+form {
+    margin: 0 13vw;
+    width: 50%;
+
+}
+
+/*input effects ------------------------------*/
+input,
+span,
+label,
+textarea {
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin: 5px;
+    padding: .15vw;
+    border: none;
+    font-size: 2vw;
+    z-index: 2;
+    background-color: rgba(246, 246, 246, 0);
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+}
+
+input.input_box,
+textarea.input_box {
+    font-size: 2vw;
+    font-weight: 300;
+    border-radius: 2px;
+    margin: 0;
+    border: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    overflow-x: hidden;
+}
+
+input.input_box + label,
+textarea.input_box + label {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #ff00a1;
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+}
+
+input.input_box:focus + label,
+textarea.input_box:focus + label {
+    width: 60%;
+}
+
+input.input_box:focus,
+input.input_box:valid {
+    padding-top: 4vw;
+}
+
+input.input_box:focus + label > span,
+input.input_box:valid + label > span {
+    top: -80px;
+    font-size: 2vw;
+    color: #4e484d;
+}
+
+textarea.input_box:focus + label > span,
+textarea.input_box:valid + label > span {
+    top: -150px;
+    font-size: 2vw;
+    color: #333;
+}
+
+input.input_box:valid + label,
+textarea.input_box:valid + label {
+    border-color: green;
+}
+
+input.input_box:invalid,
+textarea.input_box:invalid {
+    box-shadow: none;
+}
+
+input.input_box + label > span,
+textarea.input_box + label > span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #454545;
+    font-size: 1.25vw;
+    top: -2vw;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+/*submit button -----------------*/
+input[type="submit"] {
+    -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    display: block;
+    opacity: 0;
+    margin: 10px auto;
+    padding: 10px;
+    background: #717171;
+}
+
+input[type="submit"]:hover {
+    background: #24ee2f;
+}
+
+input[type="submit"]:active {
+    /*background: #717171;*/
+}
+
+input.input_box:valid ~ input[type="submit"], textarea.input_box:valid ~ input[type="submit"] {
+    -webkit-animation: appear 1s forwards;
+    animation: appear 1s forwards;
+}
+
+input.input_box:invalid ~ input[type="submit"], textarea.input_box:invalid ~ input[type="submit"] {
+    display: none;
+}
+
+@-webkit-keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm Landscaping</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<section class="landing">
+    <div class="title_landing">
+        <h1 class="title">Wow Custom Planters Company</h1>
+        <h2 class="slogan">We install planters!</h2>
+        <div class="action_page" id="action_page">
+            <h2>Give me your information</h2>
+            <div class="form_group field">
+                <form onsubmit="getData();return false;">
+
+                    <input autofocus class="input_box" id="name_box" placeholder=" " required type="text" autocomplete="off">
+                    <label for="name_box"><span>Name</span></label>
+
+                    <input class="input_box" id="address_box" placeholder=" " required type="text" autocomplete="off">
+                    <label for="address_box"><span>Address</span></label>
+
+                    <input class="input_box" id="postal_box" placeholder=" " required type="text" autocomplete="off">
+                    <label for="postal_box"><span>Postal Code</span></label>
+
+                    <input class="input_box" id="number_box" placeholder=" " required type="tel" autocomplete="off">
+                    <label for="number_box"><span>Phone Number</span></label>
+
+                    <input class="input_box" id="email_box" placeholder=" " required type="text" autocomplete="off">
+                    <label for="email_box"><span>Email</span></label>
+
+                    <input type="submit" value="Continue">
+                </form>
+            </div>
+        </div>
+        <div class="calc_box" id="calc_box">
+            <h2 class="calc_title">Instant Quote</h2>
+            <div class="choices" id="choices">
+                <div id="Square" onclick="changeToMeasurements(this.id)">
+                    <a>Square</a>
+                </div>
+                <div id="cylinder" onclick="changeToMeasurements(this.id)">
+                    <a>Flat Bottom Cylinder</a>
+                </div>
+                <div id="spherical" onclick="changeToMeasurements(this.id)">
+                    <a>½ Spherical</a>
+                </div>
+                <div id="cone" onclick="changeToMeasurements(this.id)">
+                    <a>Truncated cone</a>
+                </div>
+            </div>
+            <div class="meas" id="square_meas">
+                <div class="meas_inputs">
+                    <h2 class="square_meas_title">Enter your measurements</h2>
+                    <input class="input_box" id="square_height" name="height" onchange="squareCalc()" type="number" autocomplete="off">
+                    <label for="square_height"><span>Height</span></label>
+                    <input class="input_box" id="square_width" name="width" onchange="squareCalc()" type="number" autocomplete="off">
+                    <label for="square_width"><span>Width</span></label>
+                    <input class="input_box" id="square_length" name="length" onchange="squareCalc()" type="number" autocomplete="off">
+                    <label for="square_length"><span>Length</span></label>
+                </div>
+                <div class="results">
+                    <label for="square_volume"><span>Total Volume</span></label>
+                    <input class="output_box" id="square_volume" name="volume" type="number">
+                    <label for="square_cost"><span>Total cost</span></label>
+                    <input class="output_box" id="square_cost" name="cost" type="number">
+                    <div class="results_buttons">
+                        <button onclick="sendReport(this.value)" value="Square">Submit</button>
+                        <button onclick="backToChoices(this.value)" value="square_meas">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meas" id="cylinder_meas">
+                <div class="meas_inputs">
+                    <h2 class="cylinder_meas_title">Enter your measurements</h2>
+                    <input class="input_box" id="cylinder_height" name="height" onchange="cylinderCalc()" type="number">
+                    <label for="cylinder_height"><span>Height</span></label>
+                    <input class="input_box" id="cylinder_radius" name="radius" onchange="cylinderCalc()" type="number">
+                    <label for="cylinder_radius"><span>Radius</span></label>
+                </div>
+                <div class="results">
+                    <label for="cylinder_volume"><span>Total Volume</span></label>
+                    <input class="output_box" id="cylinder_volume" name="volume" type="number">
+                    <label for="cylinder_cost"><span>Total cost</span></label>
+                    <input class="output_box" id="cylinder_cost" name="cost" type="number">
+                    <div class="results_buttons">
+                        <button onclick="sendReport(this.value)" value="Flat Bottom Cylinder">Submit</button>
+                        <button onclick="backToChoices(this.value)" value="cylinder_meas">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meas" id="sphere_meas">
+                <div class="meas_inputs">
+                    <h2 class="sphere_meas_title">Enter your measurements</h2>
+                    <input class="input_box" id="sphere_radius" name="radius" onchange="sphereCalc()" type="number">
+                    <label for="sphere_radius"><span>Radius</span></label>
+                </div>
+                <div class="results">
+                    <label for="sphere_volume"><span>Total Volume</span></label>
+                    <input class="output_box" id="sphere_volume" name="volume" type="number">
+                    <label for="sphere_cost"><span>Total cost</span></label>
+                    <input class="output_box" id="sphere_cost" name="cost" type="number">
+                    <div class="results_buttons">
+                        <button onclick="sendReport(this.value)" value="½ Spherical">Submit</button>
+                        <button onclick="backToChoices(this.value)" value="sphere_meas">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meas" id="cone_meas">
+                <div class="meas_inputs">
+                    <h2 class="cone_meas_title">Enter your measurements</h2>
+                    <input class="input_box" id="cone_height" name="height" onchange="coneCalc()" type="number">
+                    <label for="cone_height"><span>Height</span></label>
+                    <input class="input_box" id="cone_radius_one" name="radius" onchange="coneCalc()" type="number">
+                    <label for="cone_radius_one"><span>Radius One</span></label>
+                    <input class="input_box" id="cone_radius_two" name="radius" onchange="coneCalc()" type="number">
+                    <label for="cone_radius_two"><span>Radius Two</span></label>
+                </div>
+                <div class="results">
+                    <label for="cone_volume"><span>Total Volume</span></label>
+                    <input class="output_box" id="cone_volume" name="volume" type="number">
+                    <label for="cone_cost"><span>Total cost</span></label>
+                    <input class="output_box" id="cone_cost" name="cost" type="number">
+                    <div class="results_buttons">
+                        <button onclick="sendReport(this.value)" value="Truncated cone">Submit</button>
+                        <button onclick="backToChoices(this.value)" value="cone_meas">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final_form" id="final_form">
+            <h2 id="final_form_title">Is everything here correct?</h2>
+            <h3 id="final_name"></h3>
+            <h3 id="final_address"></h3>
+            <h3 id="final_postal"></h3>
+            <h3 id="final_shape"></h3>
+            <h3 id="final_dem_one"></h3>
+            <h3 id="final_dem_two"></h3>
+            <h3 id="final_dem_three"></h3>
+            <h3 id="final_volume"></h3>
+            <h3 id="final_cost"></h3>
+        </div>
+    </div>
+
+    <img alt="bench" src="images/hal-ozart-MyRBq7GoVK0-unsplash.jpg">
+</section>
+<button hidden onclick="testing()" value="click me to skip">click me</button>
+<section class="garden_talk">
+    <div class="garden_title">
+        <h1>We design with gardens in mind</h1>
+        <h2>Custom planters!? wow</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum </p>
+    </div>
+    <div class="garden_text_area">
+        <img alt="garden tools" src="images/eco-warrior-princess-TsOeGUwWzWo-unsplash.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in
+            nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates
+            quibusdam dicta!
+        </p>
+
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
