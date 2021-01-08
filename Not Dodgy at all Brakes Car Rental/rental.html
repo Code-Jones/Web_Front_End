@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Part 3</title>
+    <script src="Video%20Controls.js"></script>
+    <script src="rentalscript.js"></script>
+    <link href="rentalstylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Welcome to Great Brakes Rental Company</h1>
+<div class="firstQuestion">
+    <h3>Find your Account</h3>
+    <label>Search by last name:
+        <input id="lastNameInput" onclick="scrollFade()" type="text">
+    </label>
+</div>
+<div class="FixedHeightContainer hidden" id="scrollbox">
+    <h2>Find your name</h2>
+    <div class="Content extraClass">
+        <p><b>First Name Last Name</b></p>
+        <table id="searchResults">
+        </table>
+    </div>
+</div>
+<div class="box container hidden" id="formFade">
+    <form onsubmit="sendAlert();return false">
+        <h2 class="text-center">Enter Details</h2>
+        <div class="grid-row">
+            <div class="input-container grid-item">
+                <input disabled id="firstNameOutput" type="text">
+                <label for="firstNameOutput">First Name: </label>
+            </div>
+            <div class="input-container grid-item">
+                <input disabled id="lastNameOutput" type="text">
+                <label for="lastNameOutput">Last Name: </label>
+            </div>
+
+            <div class="input-container grid-item">
+                <input disabled id="address" type="text">
+                <label for="address">Address: </label>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="input-container grid-item">
+                <input disabled id="prov" type="text">
+                <label for="prov">Province: </label>
+            </div>
+            <div class="input-container grid-item">
+                <input disabled id="email" type="text">
+                <label for="email">Email: </label>
+            </div>
+            <div class="input-container grid-item">
+                <input disabled id="phone" type="text">
+                <label for="phone">Phone: </label>
+            </div>
+        </div>
+        <div class="grid-row" id="radioButtons">
+            <div class="input-container grid-item">
+                <input id="compact" name="carType" type="radio" onchange="getTotal()">
+                <label for="compact">Compact</label>
+            </div>
+            <div class="input-container grid-item">
+                <input id="midSize" name="carType" type="radio"  onchange="getTotal()">
+                <label for="midSize">Mid-Size</label>
+            </div>
+            <div class="input-container grid-item">
+                <input id="luxury" name="carType" type="radio"  onchange="getTotal()">
+                <label for="luxury">Luxury</label>
+            </div>
+            <div class="input-container grid-item">
+                <input id="truck" name="carType" type="radio"  onchange="getTotal()">
+                <label for="truck">Van/Trunk</label>
+            </div>
+        </div>
+        <div class="grid-row checkboxes">
+            <div class=" grid-item">
+                <input class="" id="rack" type="checkbox"  onchange="getTotal()">
+                <label class="" for="rack">Roof Rack (Extra $5/day)</label>
+            </div>
+            <div class="grid-item">
+                <input class="" id="gps" type="checkbox"  onchange="getTotal()">
+                <label class="" for="gps">Gps (Extra $10)</label>
+            </div>
+            <div class=" grid-item">
+                <input class="" id="childSeat" type="checkbox" onchange="getTotal()">
+                <label class="" for="childSeat">Child Seat (Free)</label>
+            </div>
+        </div>
+        <div class="grid-row numbers">
+            <div class="input-container grid-item">
+                <input id="days" max="30" min="0" type="number" onchange="getTotal()">
+                <label for="days">How many days would you like to rent for: </label>
+            </div>
+            <div class="grid-item input-container">
+                <input type="number" id="total" disabled>
+                <label for="total">Total Price:</label>
+            </div>
+        </div>
+        <input class="btn " type="submit">
+    </form>
+</div>
+</body>
+</html>

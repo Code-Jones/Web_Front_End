@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Part 3</title>
+    <link href="Landing%20Page%20Stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <!--   source: https://www.youtube.com/watch?v=hPkY8nBWxoU -->
+</head>
+<body>
+
+<header>
+    <div class="flex_align">
+        <h1>Welcome to Not Dodgy at all Brakes Car Rental</h1>
+    </div>
+    <a href="rental.html">
+    <img alt="icon" id="icon" src="Images/1965327.svg">
+    </a>
+</header>
+<a href="rental.html">
+<div class="video-background">
+    <div class="video-foreground">
+        <div id="myvideo"></div>
+    </div>
+</div>
+</a>
+
+<footer>
+    <div class="flex_align">
+        <span id="time">insert current date and time</span>
+        <span>Click on the video to continue</span>
+    </div>
+</footer>
+</body>
+<script src="Video%20Controls.js"></script>
+<script>
+    const today = new Date();
+    const weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    document.getElementById('time').innerText = "The Current Time is " + today.getHours() + ":" + today.getMinutes() + (today.getHours() >= 12 ? 'pm' : 'am') + " On " + weekday[today.getDay()];
+</script>
+</html>
